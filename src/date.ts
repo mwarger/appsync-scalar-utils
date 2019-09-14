@@ -6,9 +6,12 @@ export const AWSDateTimeFormatString = `yyyy-MM-dd'T'hh:mm:ss.sssX`; // date-fns
 // from docs: YYYY-MM-DD
 export const AWSDateFormatString = 'yyyy-MM-dd'; // date-fns format
 
-export const parseAWSDateTime = (date: string) => parseISO(date);
+export type AWSDateTime = string;
+export type AWSDate = string;
 
-export const parseAWSDate = (date: string) => parseISO(date);
+export const parseAWSDateTime = (date: AWSDateTime) => parseISO(date);
+
+export const parseAWSDate = (date: AWSDate) => parseISO(date);
 
 export const formatAWSDateTime = (date: Date | number | string) =>
   format(new Date(date), AWSDateTimeFormatString);
