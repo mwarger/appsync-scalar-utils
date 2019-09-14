@@ -18,4 +18,10 @@ describe('date utils', () => {
     const formattedDate = formatAWSDateTime(dateToFormat);
     expect(formattedDate.startsWith('2019-01-01T12:00:00.000')).toBeTruthy(); // ignore time zone
   });
+
+  it('formats a string Date to AWSDateTime format', () => {
+    const dateToFormat = '2019/01/01';
+    const formattedDate = formatAWSDateTime(dateToFormat);
+    expect(formattedDate.startsWith('2019-01-01T12:00:00.000')).toBeTruthy(); // ignore time zone
+  });
 });
