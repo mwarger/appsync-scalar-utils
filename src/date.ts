@@ -5,14 +5,10 @@ export const AWSDateFormatString = 'yyyy-MM-dd';
 
 export const parseAWSDateTime = (date: string) => parseISO(date);
 
-export function parseAWSDate(date: string) {
-  return parseISO(date);
-}
+export const parseAWSDate = (date: string) => parseISO(date);
 
-export function formatAWSDateTime(date: Date | number) {
-  return format(date, AWSDateTimeFormatString);
-}
+export const formatAWSDateTime = (date: Date | number) =>
+  format(date, AWSDateTimeFormatString);
 
-export function formatAWSDate(date: Date | number) {
-  return format(date, AWSDateFormatString);
-}
+export const formatAWSDate = (date: Date | number) =>
+  format(date, AWSDateFormatString);
