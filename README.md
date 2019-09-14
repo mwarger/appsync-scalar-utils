@@ -1,6 +1,6 @@
 # AppSync Scalar Utils
 
-Small utilities to work with [AWS AppSync scalars](https://docs.aws.amazon.com/en_pv/appsync/latest/devguide/scalars.html).
+Small (currently naive) utilities to work with [AWS AppSync scalars](https://docs.aws.amazon.com/en_pv/appsync/latest/devguide/scalars.html).
 
 ### TODO
 
