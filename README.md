@@ -4,11 +4,11 @@ Small utilities to work with [AWS AppSync scalars](https://docs.aws.amazon.com/e
 
 ### TODO
 
-- [] AWSDate
-- [] AWSTime
-- [] AWSDateTime
-- [] AWSTimestamp
-- [] AWSEmail
-- [] AWSJSON
-- [] AWSPhone
-- [] AWSIPAddress
+- [ ] AWSDate
+- [ ] AWSTime
+- [ ] AWSDateTime
+- [ ] AWSTimestamp
+- [ ] AWSEmail
+- [ ] AWSJSON
+- [ ] AWSPhone
+- [ ] AWSIPAddress
