@@ -1,8 +1,8 @@
 {
-  "name": "amplify-scalar-utils",
-  "version": "0.1.1",
+  "name": "appsync-scalar-utils",
+  "version": "0.1.5",
   "main": "dist/index.js",
-  "module": "dist/amplify-scalar-utils.esm.js",
+  "module": "dist/appsync-scalar-utils.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
