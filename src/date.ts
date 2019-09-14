@@ -7,8 +7,8 @@ export const parseAWSDateTime = (date: string) => parseISO(date);
 
 export const parseAWSDate = (date: string) => parseISO(date);
 
-export const formatAWSDateTime = (date: Date | number) =>
-  format(date, AWSDateTimeFormatString);
+export const formatAWSDateTime = (date: Date | number | string) =>
+  format(new Date(date), AWSDateTimeFormatString);
 
-export const formatAWSDate = (date: Date | number) =>
-  format(date, AWSDateFormatString);
+export const formatAWSDate = (date: Date | number | string) =>
+  format(new Date(date), AWSDateFormatString);
