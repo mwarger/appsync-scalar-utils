@@ -1,0 +1,18 @@
+import { format, parseISO } from 'date-fns';
+
+export const AWSDateTimeFormatString = `yyyy-MM-dd'T'hh:mm:ss.sssX`;
+export const AWSDateFormatString = 'yyyy-MM-dd';
+
+export const parseAWSDateTime = (date: string) => parseISO(date);
+
+export function parseAWSDate(date: string) {
+  return parseISO(date);
+}
+
+export function formatAWSDateTime(date: Date | number) {
+  return format(date, AWSDateTimeFormatString);
+}
+
+export function formatAWSDate(date: Date | number) {
+  return format(date, AWSDateFormatString);
+}
