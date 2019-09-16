@@ -1,6 +1,6 @@
 {
   "name": "appsync-scalar-utils",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/index.js",
   "module": "dist/appsync-scalar-utils.esm.js",
   "typings": "dist/index.d.ts",
