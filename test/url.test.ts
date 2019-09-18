@@ -8,6 +8,9 @@ describe('IP Address utils', () => {
     const httpsUrl = 'https://google.com';
     expect(validateAWSURL(httpsUrl)).toBe(true);
 
+    const wwwURL = 'www.google.com';
+    expect(validateAWSURL(wwwURL)).toBe(true);
+
     const noHTTPURl = 'google.com';
     expect(validateAWSURL(noHTTPURl)).toBe(false);
 
