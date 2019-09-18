@@ -1,14 +1,19 @@
 # AppSync Scalar Utils
 
-Small utilities to work with [AWS AppSync scalars](https://docs.aws.amazon.com/en_pv/appsync/latest/devguide/scalars.html).
+Small (currently naive) utilities to work with [AWS AppSync scalars](https://docs.aws.amazon.com/en_pv/appsync/latest/devguide/scalars.html).
 
 ### TODO
 
-- [ ] AWSDate
-- [ ] AWSTime
-- [ ] AWSDateTime
+- [x] AWSDate
+- [x] AWSTime
+- [x] AWSDateTime
 - [ ] AWSTimestamp
-- [ ] AWSEmail
+- [x] AWSEmail
 - [ ] AWSJSON
-- [ ] AWSPhone
-- [ ] AWSIPAddress
+- [x] AWSPhone
+- [x] AWSIPAddress
+- [x] AWSURL
+
+Docs to come soon...
+
+Build with [TSDX](https://github.com/palmerhq/tsdx) <3
