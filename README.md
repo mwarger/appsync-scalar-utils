@@ -4,11 +4,16 @@ Small (currently naive) utilities to work with [AWS AppSync scalars](https://doc
 
 ### TODO
 
-- [ ] AWSDate
-- [ ] AWSTime
-- [ ] AWSDateTime
+- [x] AWSDate
+- [x] AWSTime
+- [x] AWSDateTime
 - [ ] AWSTimestamp
-- [ ] AWSEmail
+- [x] AWSEmail
 - [ ] AWSJSON
-- [ ] AWSPhone
-- [ ] AWSIPAddress
+- [x] AWSPhone
+- [x] AWSIPAddress
+- [x] AWSURL
+
+Docs to come soon...
+
+Build with [TSDX](https://github.com/palmerhq/tsdx) <3
