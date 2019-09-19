@@ -1,9 +1,4 @@
-import {
-  parseNumber,
-  formatNumber,
-  parsePhoneNumber,
-  CountryCode,
-} from 'libphonenumber-js';
+import { parsePhoneNumber, CountryCode } from 'libphonenumber-js';
 
 export const validateAWSPhone = (
   phoneNumber: string,
@@ -13,4 +8,4 @@ export const validateAWSPhone = (
 export const formatAWSPhone = (
   phoneNumber: string,
   countryCode: CountryCode = 'US'
-) => formatNumber(parseNumber(phoneNumber, countryCode), 'E.164');
+) => parsePhoneNumber(phoneNumber, countryCode).formatInternational();
