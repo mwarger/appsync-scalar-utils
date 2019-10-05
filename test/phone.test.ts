@@ -23,7 +23,7 @@ describe('phone utils', () => {
     expect(formatAWSPhone(phoneWithCountryCodePlus)).toEqual(expected);
     const phoneWithoutCountryCode = '8161235423';
     expect(formatAWSPhone(phoneWithoutCountryCode)).toEqual(expected);
-    const phoneWithHyphens = '816-123-5423';
+    const phoneWithHyphens = '(816) 123-5423';
     expect(formatAWSPhone(phoneWithHyphens)).toEqual(expected);
 
     const badPhone = '123';
