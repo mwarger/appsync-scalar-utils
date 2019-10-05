@@ -8,4 +8,7 @@ export const validateAWSPhone = (
 export const formatAWSPhone = (
   phoneNumber: string,
   countryCode: CountryCode = 'US'
-) => parsePhoneNumber(phoneNumber, countryCode).formatInternational();
+) =>
+  parsePhoneNumber(phoneNumber, countryCode)
+    .formatInternational()
+    .replace(/\s/g, '');
