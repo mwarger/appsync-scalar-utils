@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Automated releases for npm packages.
+      uses: mikeal/merge-release@2.2.6
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
