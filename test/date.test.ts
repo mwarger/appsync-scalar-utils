@@ -1,5 +1,4 @@
 import { formatAWSDate, formatAWSDateTime, formatAWSTimestamp } from '../src';
-
 describe('date utils', () => {
   it('formats a Date to AWSDate format', () => {
     const dateToFormat = new Date('2019/01/01');
@@ -29,5 +28,12 @@ describe('date utils', () => {
     const dateToFormat = 1568902280;
     const formattedDate = formatAWSTimestamp(dateToFormat);
     expect(formattedDate.startsWith('2019-09-19T09:11:20')).toBeTruthy(); // ignore time zone
+  });
+
+  it('formats a DateTime', () => {
+    const dateToFormat = new Date();
+    const formatted = formatAWSDateTime(dateToFormat);
+
+    expect(formatted.startsWith('2019-11-16')).toBeTruthy(); // ignore time zone
   });
 });

@@ -24,8 +24,9 @@ export const parseAWSDate = (date: string) => parseISO(date);
  * Returns a string that can be passed to a GraphQL mutation as an AWSDateTime scalar
  * @param {Date|number|string} date - Date to be formatted
  */
-export const formatAWSDateTime = (date: Date | number | string) =>
-  format(new Date(date), AWSDateTimeFormatString);
+export const formatAWSDateTime = (date: Date | number | string) => {
+  return format(new Date(date), AWSDateTimeFormatString);
+};
 
 /**
  * Returns a string that can be passed to a GraphQL mutation as an AWSDate scalar
